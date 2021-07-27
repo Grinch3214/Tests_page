@@ -1,0 +1,134 @@
+@import "fonts";
+@import "resetcss";
+
+.fluid {
+    background: #1A8CEA;
+}
+
+.header {
+    color: #fff;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__item-secondtxt {
+        font-weight: 700;
+        font-size: 24px;
+        margin-left: 20px;
+    }
+}
+
+.name {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 29px 10px 20px 10px;
+    &__full {
+        font-size: 24px;
+        color: #000;
+        padding-bottom: 5px;
+    }
+    &__id {
+        color: #444;
+    }
+}
+
+.answer {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 29px 10px 20px 10px;
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+    }
+    &__item {
+        width: 25px;
+        height: 25px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        color: #1A8CEA;
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        font-weight: 700;
+    }
+    &__true {
+        color: #444;
+        font-weight: 350;
+        font-family: 'circelight';
+    }
+    &__true-txt {
+        font-size: 18px;
+        font-family: 'circeregular';
+        font-weight: 400;
+        padding-left: 10px;
+    }
+}
+
+.questions {
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 20px;
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__text {
+        margin-bottom: 8px;
+    }
+    &__image {
+        min-width: 200px;
+        max-width: 400px;
+    }
+    .questions__radio {
+        max-width: 450px;
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.form-radio {
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.form-radio input[type=radio] {
+	display: none;
+}
+.form-radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form-radio label:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+    border-radius: 50%;
+	border: 1px solid #444;
+}
+.form-radio input[type=radio]:checked + label:before {
+	background: #444;
+}
